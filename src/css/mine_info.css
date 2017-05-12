@@ -1,0 +1,301 @@
+@import "common.css";
+#mine_info {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+
+.header-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 44px;
+    background-color: #FFabc8;
+    color: white;
+    padding: 0 13px;
+    width: 100%;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+
+.header-wrap-detail {
+    position: relative;
+    width: 100%
+}
+
+.header-detail .header-back-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%
+}
+
+.header-detail .header-text-detail {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.banner {
+    position: absolute;
+    top: 44px;
+    width: 100%;
+    padding: 7px 0;
+    bottom: 0;
+}
+.banner-list li{
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 13px;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  font-size: 14px;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+}
+.banner-list li:nth-of-type(1){
+  height: 60px;
+}
+.banner-list div{
+  height: 100%;
+}
+.banner-list div img{
+  height: 100%;
+      margin-left: 10px;
+}
+.list-head img{
+  width: 45px;
+  height: 45px;
+border-radius: 50%;
+}
+.list-birthday {
+  margin-top: 7px;
+}
+input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #333;
+}
+
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #333;
+}
+
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #333;
+}
+
+input:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #333;
+}
+.list-birthday #getTime{
+  text-align: right;
+  color:#333;
+}
+.gender-choose{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+}
+.gender-wrap{
+  width: 80%;
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 10px;
+}
+.gender-wrap img{
+  width: 80px;
+  height: 80px;
+  margin-top: 22px;
+}
+.wrap-top{
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+}
+.make-sure{
+  width: 85px;
+  margin: 27px auto 0;
+  background-color: #ffabc8;
+  color:white;
+  font-size: 18px;
+  border-radius: 5px;
+  height: 37px;
+  text-align: center;
+  line-height: 37px;
+}
+.uploader-wrap{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  display: none;
+}
+.uploader-list {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  width: 100%;
+}
+.uploader-list div{
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  width: 100%;
+}
+.uploader-list span{
+  height: 40px;
+  color:red;
+  text-align: center;
+  width: 100%;
+  display: block;
+  background-color: white;
+  line-height: 40px;
+
+}
+.uploader-list input{
+  position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+opacity: 0;
+height: 100%;
+}
+.time-choose{
+  position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+bottom: 0;
+background: rgba(0,0,0,0.4);
+display: none;
+}
+.time-choose .time-choose-wrap{
+  width: 3rem;
+height: 327px;
+background-color: white;
+border-radius: 10px;
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+margin: auto;
+}
+.time-choose .time-choose-wrap .top{
+  height: 47px;
+    line-height: 47px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.time-choose .time-choose-wrap .bottom{
+  position: absolute;
+bottom: 0;
+height: 55px;
+line-height: 55px;
+border-top: 1px solid #ddd;
+width: 100%;
+font-size: 18px;
+text-align: center;
+display: -webkit-box;
+/* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;
+/* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;
+/* TWEENER - IE 10 */
+display: -webkit-flex;
+/* NEW - Chrome */
+display: flex;
+/* NEW, Spec - Opera 12.1, Firefox 20+ */
+-webkit-justify-content: space-around;
+-moz-justify-content: space-around;
+-ms-justify-content: space-around;
+-o-justify-content: space-around;
+justify-content: space-around;
+-webkit-align-items: center;
+-moz-align-items: center;
+-ms-align-items: center;
+-o-align-items: center;
+align-items: center;
+}
+.time-choose .time-choose-wrap .bottom span{
+  height: 35px;
+  width: 0.97rem;
+  border: 1px solid #ffabc8;
+  background-color: white;
+  line-height: 35px;
+  border-radius: 5px;
+  color: #ffabc8;
+}
+.time-choose .time-choose-wrap .bottom .show{
+  color:white;
+  background-color: #ffabc8
+}

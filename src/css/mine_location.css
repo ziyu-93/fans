@@ -1,0 +1,121 @@
+@import "common.css";
+#mine_location {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+
+.header-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 44px;
+    background-color: #FFabc8;
+    color: white;
+    padding: 0 13px;
+    width: 100%;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+
+.header-wrap-detail {
+    position: relative;
+    width: 100%
+}
+
+.header-detail .header-back-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%
+}
+
+.header-detail .header-text-detail {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.banner {
+    position: absolute;
+    top: 44px;
+    width: 100%;
+    padding: 7px 0;
+    bottom: 0;
+}
+.banner-list li{
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 13px;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  font-size: 16px;
+  position: relative;
+}
+.banner-list li span:nth-of-type(1){
+  margin-right: 30px;
+  width: 64px;
+}
+.banner-list .list-location img{
+  position: absolute;
+  right: 13px;
+top: 15px;
+  height: 23px;
+}
+.location{
+  width: 2.132rem;
+}
+.location-wrap{
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  width: 100%;
+}
+.location-wrap select{
+  background-color: white;
+  color:#347DE1;
+    width: 76px;
+  font-size: 14px;
+}
+.location-wrap select:nth-of-type(3){
+  width: 85px;
+}

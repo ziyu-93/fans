@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的资料</title>
+    <link rel="stylesheet" href="./../css/mine_info.css">
+</head>
+
+
+<body>
+    <div id="mine_info">
+        <div class="header-detail">
+            <div class="header-wrap-detail">
+                <img class="header-back-detail" src="./../img/back.png">
+                <p class="header-text-detail">我的资料</p>
+            </div>
+        </div>
+        <div class="banner">
+            <ul class="banner-list">
+                <li class="list-head">
+                    <span>头像</span>
+                    <img src="./../img/star1.png">
+                </li>
+                <li class="list-name">
+                    <span>昵称</span>
+                    <div>
+                        <span>夏天的雪花</span>
+                        <img class="jiantou" src="./../img/yule_jiantou.png">
+                    </div>
+                </li>
+                <li class="list-gender">
+                    <span>性别</span>
+                    <div>
+                        <span>男</span>
+                        <img class="jiantou" src="./../img/yule_jiantou.png">
+                    </div>
+                </li>
+                <li class="list-signature">
+                    <span>个性签名</span>
+                    <div>
+                        <span>"年轻的时候"</span>
+                        <img class="jiantou" src="./../img/yule_jiantou.png">
+                    </div>
+                </li>
+                <li class="list-birthday">
+                    <span>生日</span>
+                    <div>
+                        <input placeholder="选择生日" id="getTime">
+                        <img class="jiantou" src="./../img/yule_jiantou.png">
+                    </div>
+                </li>
+                <li class="list-location">
+                    <span>我的地址</span>
+                    <div>
+                        <span>北京市昌平区沙河</span>
+                        <img class="jiantou" src="./../img/yule_jiantou.png">
+                    </div>
+                </li>
+                <li class="list-mailbox">
+                    <span>邮箱</span>
+                    <div>
+                        <span>494999197@qq.com</span>
+                        <img class="jiantou" src="./../img/yule_jiantou.png">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="gender-choose">
+        <div class="gender-wrap">
+            <div class="wrap-top">
+                <img src="./../img/mine_man1.png" data=1>
+                <img src="./../img/mine_woman0.png" data=0>
+            </div>
+            <div class="make-sure">
+                <span>确定</span>
+            </div>
+        </div>
+    </div>
+    <div class="uploader-wrap">
+        <div class="uploader-list">
+
+            <div class="file-wrap">
+                拍照
+                <input type="file" accept="image/*;capture=camcorder">
+                <!-- multiple多张上传属性 -->
+            </div>
+
+            <div class="file-wrap">
+                上传图片
+                <input id="upload_image" type="file" accept="image/*;capture=camera">
+            </div>
+
+            <span class="close-send">取消</span>
+
+        </div>
+    </div>
+</body>
+<script src="./../lib/jquery-1.12.3.min.js"></script>
+<script src="./../lib/datePicker.js"></script>
+<script src="./../js/tools.js"></script>
+<script src="./../js/mine_info.js"></script>
+
+
+
+</html>

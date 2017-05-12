@@ -1,0 +1,172 @@
+@import "common.css";
+@import "tools.css";
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 100%
+}
+
+#star_page {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.header-logo {
+    height: 54px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #FFabc8;
+    padding: 0 13px;
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
+        justify-content: space-between;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+
+.header-logo .logo {
+    height: 50px;
+    margin-top: 2px;
+}
+
+.header-logo .header-logo-right {
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+    -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        -o-justify-content: center;
+        justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+
+.header-logo .header-logo-right img {
+    width: 26px;
+    margin-bottom: 3px;
+}
+
+.header-logo .header-logo-right a {
+    color: #821242
+}
+
+
+
+.banner {
+    width: 100%;
+    position: absolute;
+    top: 104px;
+    left: 0;
+    bottom: 0;
+    overflow-y: scroll
+}
+
+.banner-top {
+    position: relative;
+    padding: 19px 13px;
+    text-align: center;
+}
+
+.banner-top img:nth-of-type(1) {
+    width: 85px;
+    height: 32px;
+}
+
+.banner-top img:nth-of-type(2) {
+    width: 48px;
+    height: 53px;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+}
+
+.banner-bottom {
+    padding: 0 13px;
+}
+
+.banner-bottom .bottom-list {
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      -o-justify-content: space-between;
+      justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.banner-bottom .bottom-list .item {
+  height: 44vw;
+width: 44vw;
+    margin-bottom: 4%;
+    position: relative;
+}
+
+.banner-bottom .bottom-list .item:nth-of-type(2n+1) {
+    margin-right: 4%;
+}
+
+.banner-bottom .bottom-list .item:nth-of-type(2n) {
+    margin-right: 0;
+}
+
+.banner-bottom .bottom-list .item img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-bottom .bottom-list .item p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 33px;
+    background-color: #121212;
+    opacity: 0.6;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.banner-bottom .bottom-list .item p span {
+    line-height: 33px;
+    height: 33px;
+    color: white;
+}

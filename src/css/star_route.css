@@ -1,0 +1,231 @@
+@import "common.css";
+#star-route {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #f7f7f7;
+}
+
+.header-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 44px;
+    background-color: #FFabc8;
+    color: white;
+    padding: 0 13px;
+    width: 100%;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+
+.header-wrap-detail {
+    position: relative;
+    width: 100%
+}
+
+.header-detail .header-back-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%
+}
+
+.header-detail .header-text-detail {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.banner {
+    position: absolute;
+    top: 44px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+}
+
+.banner-top {
+    padding: 22px 0 22px 0.282rem;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    color: white;
+    font-size: 14px;
+    background-color: #ffabc8;
+    border-top: 1px solid #ddd;
+}
+
+.banner-top img {
+    width: 86px;
+    margin-right: 0.299rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.banner-top .top-left span {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.banner-top .top-right p {
+    margin-bottom: 23px;
+}
+
+.banner-top .top-right p:nth-of-type(3) {
+    margin-bottom: 0;
+}
+
+.banner-top .top-right .rigth-text {
+    font-size: 18px;
+}
+
+.banner-top .top-right .time {
+    margin-right: 22px;
+}
+
+.banner-bottom .bottom-title {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    font-size: 18px;
+    padding: 13px 0;
+    border-bottom: 1px solid #ddd;
+    height: 44px;
+    line-height: 18px;
+    background-color: white;
+}
+
+.banner-bottom .bottom-title li {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    height: 100%;
+}
+
+.banner-bottom .bottom-title .title-month {
+    font-size: 14px;
+}
+
+.banner-bottom .bottom-title .left-arrow {
+    margin-right: 10px;
+    height: 100%;
+}
+
+.banner-bottom .bottom-title .right-arrow {
+    margin-left: 10px;
+    height: 100%;
+}
+
+.bottom-list {
+    padding: 0 13px;
+    background-color: white;
+    margin-top: 7px;
+    overflow: hidden;
+}
+
+.bottom-list li {
+    padding: 17px 0;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    border-bottom: 1px solid #ddd;
+}
+
+.bottom-list li img {
+    padding: 0 13px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.bottom-list li .list-title {
+    font-size: 16px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bottom-list li .location {
+    font-size: 14px;
+    color: #999;
+}
+
+.bottom-list li .list-time {
+    border-right: 1px solid #ddd;
+    height: 40px;
+}
+
+.bottom-list li .list-text {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    margin-left: 25px;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+}

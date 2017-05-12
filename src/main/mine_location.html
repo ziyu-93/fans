@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的地址</title>
+    <link rel="stylesheet" href="./../css/mine_location.css">
+</head>
+<script src="./../lib/location.js"></script>
+
+<body>
+    <div id="mine_location">
+        <div class="header-detail">
+            <div class="header-wrap-detail">
+                <img class="header-back-detail" src="./../img/back.png">
+                <p class="header-text-detail">我的地址</p>
+            </div>
+        </div>
+        <div class="banner">
+            <ul class="banner-list">
+                <li class="list-name">
+                    <span>姓名</span>
+                    <span class="name">张三</span>
+                </li>
+                <li class="list-phoneNumber">
+                    <span>手机号码</span>
+                    <input type="tel" class="phoneNumber" placeholder="11位手机号码" maxlength="11">
+                </li>
+                <li class="list-location">
+                    <span>地区信息</span>
+                    <div class="location">
+
+                        <div class="location-wrap">
+
+                            <select id="s_province" name="s_province"></select>
+
+                            <select id="s_city" name="s_city"></select>
+
+                            <select id="s_county" name="s_county"></select>
+
+
+                            <script type="text/javascript">
+                                _init_area();
+                            </script>
+
+                        </div>
+
+
+
+                    </div>
+                    <img src="./../img/mine_location.png">
+                </li>
+                <li class="list-signature">
+                    <span>详细地址</span>
+                    <input type="text" placeholder="街道号门牌号">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script src="./../lib/jquery-1.12.3.min.js"></script>
+<script src="./../js/mine_location.js"></script>
+
+</html>

@@ -1,0 +1,377 @@
+@import "common.css";
+@import "tools.css";
+#new_detail_page {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.header-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 44px;
+    background-color: #FFabc8;
+    color: white;
+    padding: 0 13px;
+    width: 100%;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+
+.header-wrap-detail {
+    position: relative;
+    width: 100%
+}
+
+.header-detail .header-back-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%
+}
+
+.header-detail .header-text-detail {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+#new_detail_page .banner {
+    position: absolute;
+    top: 44px;
+    width: 100%;
+    overflow-y: scroll;
+    bottom: 49px;
+}
+
+#new_detail_page .banner .banner-top {
+    padding: 30px 0;
+    border-bottom: 1px solid #ddd
+}
+
+#new_detail_page .banner-top .top-wrap {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #ccc;
+    margin-bottom: 9px;
+    display: inline-block;
+}
+
+#new_detail_page .banner-top .top-wrap .top-title {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#new_detail_page .banner-top .top-wrap .top-date {
+    margin-right: 5px
+}
+
+#new_detail_page .banner .top-content {
+    padding: 0 0.479rem;
+    color: #666;
+    font-size: 12px;
+}
+
+#new_detail_page .top-content .content-wrap p {
+    text-indent: 24px;
+    width: 100%;
+    margin: 18px 0;
+}
+
+#new_detail_page .top-content .content-wrap img {
+    width: 100%;
+    margin-left: -24px;
+}
+
+#new_detail_page .top-content .content-assess {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    margin: 32px 19px 0;
+    padding-top: 12px;
+    border-top: 1px solid #ddd;
+}
+
+#new_detail_page .top-content .content-assess img {
+    width: 28px;
+}
+
+#new_detail_page .banner-bottom .banner-title-wrap {
+    border-bottom: 1px solid #ddd;
+    padding: 0 13px
+}
+
+#new_detail_page .banner-bottom .banner-title {
+    margin: 4px 0;
+    border-left: 3px solid #FFabc8;
+    height: 36px;
+}
+
+#new_detail_page .banner-bottom .banner-title-text {
+    font-size: 16px;
+    color: #333;
+    padding: 4px 0 4px 13px;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    height: 100%;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+
+#new_detail_page .banner-bottom .comment-item {
+    padding: 15px 0.111rem 18px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+#new_detail_page .banner-bottom .comment-item .reply-button {
+    width: 45px;
+    position: absolute;
+    top: 15px;
+    right: .111rem;
+}
+
+#new_detail_page .banner-bottom .item-top {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    width: 100%;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -o-justify-content: flex-start;
+}
+
+#new_detail_page .banner-bottom .logo-wrap {
+    margin-right: .103rem;
+    width: 48px;
+    height: 48px;
+}
+
+#new_detail_page .banner-bottom .item-logo {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#new_detail_page .banner-bottom .item-title {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#new_detail_page .banner-bottom .item-title .item-name {
+    margin-right: .153rem;
+}
+
+#new_detail_page .banner-bottom .item-right-top {
+    margin-bottom: 18px;
+}
+
+#new_detail_page .banner-bottom .item-right-top .item-grade {
+    background: #ffac67;
+    padding: 0px 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+#new_detail_page .banner-bottom .item-right-top .item-floor {
+    font-size: 12px;
+    color: #638EFF;
+    display: block;
+}
+
+#new_detail_page .banner-bottom .item-text-wrap {
+    width: 1.92rem;
+}
+
+#new_detail_page .banner-bottom .item-text {
+    font-size: 14px;
+    margin-bottom: 6px;
+    line-height: 16px;
+    display: inline-block
+}
+
+#new_detail_page .banner-bottom .item-wrap {
+    font-size: 12px;
+    padding-left: .111rem;
+    width: 100%
+}
+
+#new_detail_page .banner-bottom .item-wrap .item-wrap-img {
+    margin-left: 5px;
+    display: none;
+}
+
+#new_detail_page .banner-bottom .item-reply {
+    background-color: #f2f2f3;
+    margin-top: -4px;
+    border-radius: 5px;
+}
+
+#new_detail_page .banner-bottom .item-reply ul {
+    overflow: hidden;
+}
+
+#new_detail_page .banner-bottom .item-reply-text {
+    padding: 0 0 10px 13px;
+}
+
+#new_detail_page .banner-bottom .item-reply-text .reply-value {
+    line-height: 16px;
+}
+
+#new_detail_page .banner-bottom .item-reply-more {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#new_detail_page .banner-bottom .item-reply-more a {
+    color: #3D6Bf0;
+}
+
+#new_detail_page .banner-bottom .item-reply-text:nth-of-type(1) {
+    padding-top: 10px;
+}
+
+#new_detail_page .banner-bottom .reply-key {
+    color: #3D6Bf0;
+    margin-right: 5px;
+    letter-spacing: 2px;
+}
+
+#new_detail_page .banner-bottom .reply-value {
+    color: #999;
+}
+
+#new_detail_page .banner-bottom .item-date {
+    color: #ccc;
+    font-size: 12px;
+    display: block;
+    margin-top: 19px
+}
+
+#new_detail_page .bottom {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    padding: 0 13px;
+    background: #ffabc8;
+    width: 100%;
+}
+
+#new_detail_page .bottom-wrap {
+    margin: 9px 0;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    height: 40px;
+    width: 100%;
+}
+
+#new_detail_page .bottom-wrap img:nth-of-type(1) {
+    width: 75%;
+    margin-right: 3%;
+}
+
+#new_detail_page .bottom-wrap img:nth-of-type(2) {
+    width: 22%;
+}
+
+#new_detail_page .looding-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: none;
+}
+
+#new_detail_page .looding {
+    width: 200px;
+    height: 200px;
+}
+
+#new_detail_page .looding img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#new_detail_page .looding .looding-close {
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: -5px;
+    right: 7px;
+}

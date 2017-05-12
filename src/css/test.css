@@ -1,0 +1,334 @@
+.gearYM, .gearDate, .gearDatetime, .gearTime {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9900;
+    overflow: hidden;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+      -o-animation-fill-mode: both;
+         animation-fill-mode: both
+}
+
+.date_ctrl {
+    vertical-align: middle;
+    background-color: white;
+    color: #000;
+    top: 0;
+    right: 0;
+    margin: auto;
+    height: 332px;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+    width: 3rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 9901;
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+         transform: translate3d(0, 0, 0)
+}
+
+.slideInUp {
+    -moz-animation: slideInUp .3s ease;
+      -o-animation: slideInUp .3s ease;
+         animation: slideInUp .3s ease;
+    -webkit-animation: slideInUp .3s ease;
+}
+
+@-webkit-keyframes slideInUp {
+    from {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@-moz-keyframes slideInUp {
+    from {
+        -webkit-transform: translate3d(0, 100%, 0);
+        -moz-transform: translate3d(0, 100%, 0);
+             transform: translate3d(0, 100%, 0)
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+             transform: translate3d(0, 0, 0)
+    }
+}
+
+@-o-keyframes slideInUp {
+    from {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        -webkit-transform: translate3d(0, 100%, 0);
+        -moz-transform: translate3d(0, 100%, 0);
+             transform: translate3d(0, 100%, 0)
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+             transform: translate3d(0, 0, 0)
+    }
+}
+
+.ym_roll, .date_roll, .datetime_roll, .time_roll {
+    display: -webkit-box;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: transparent;
+    -webkit-mask: -webkit-gradient(linear, 0% 50%, 0% 100%, from(#debb47), to(rgba(36, 142, 36, 0)));
+            mask: -webkit-gradient(linear, 0% 50%, 0% 100%, from(#debb47), to(rgba(36, 142, 36, 0)));
+    mask: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #debb47), color-stop(50%, rgba(36, 142, 36, 0)));
+    mask: -webkit-linear-gradient(top, #debb47 50%, rgba(36, 142, 36, 0));
+    background: -webkit-gradient(linear, left bottom, left top, from(#ededed),color-stop(50%, #999), color-stop(50%, #ededed));
+    background: -webkit-linear-gradient(bottom, #ededed,#999 50%, #ededed);
+    background: -moz-linear-gradient(bottom, #ededed,#999 50%, #ededed);
+    background: -o-linear-gradient(bottom, #ededed,#999 50%, #ededed);
+    background: linear-gradient(to top, #ededed,#999 50%, #ededed)
+}
+
+.ym_roll>div, .date_roll>div, .datetime_roll>div, .time_roll>div {
+    font-size: 2.3em;
+    height: 230px;
+    float: left;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-flex:4;
+    -webkit-flex:4;
+       -moz-box-flex:4;
+        -ms-flex:4;
+            flex:4
+}
+
+.ym_roll>div .gear, .date_roll>div .gear, .datetime_roll>div .gear, .time_roll>div .gear {
+    width: 100%;
+    float: left;
+    position: absolute;
+    z-index: 9902;
+    margin-top: -6em;
+}
+
+.date_roll_mask{
+-webkit-mask:-webkit-gradient(linear,0% 40%,0% 0%,from(#debb47),to(rgba(36,142,36,0)));
+-webkit-mask:-webkit-linear-gradient(bottom,#debb47 50%,rgba(36,142,36,0));
+    background: -webkit-gradient(linear, left bottom, left top, from(#ededed),color-stop(50%, #999), color-stop(50%, #ededed));
+    background: -webkit-linear-gradient(bottom, #ededed,#999 50%, #ededed);
+    background: -moz-linear-gradient(bottom, #ededed,#999 50%, #ededed);
+    background: -o-linear-gradient(bottom, #ededed,#999 50%, #ededed);
+    background: linear-gradient(to top, #ededed,#999 50%, #ededed);
+}
+
+.date_roll>div:nth-child(2) {
+-webkit-box-flex: 2;
+-webkit-flex: 2;
+   -moz-box-flex: 2;
+    -ms-flex: 2;
+        flex: 2;
+}
+
+.date_roll>div:nth-child(1), .datetime_roll>div:nth-child(1) {
+    -webkit-box-flex:4;
+    -webkit-flex:4;
+       -moz-box-flex:4;
+        -ms-flex:4;
+            flex:4
+}
+
+.datetime_roll>div:first-child {
+    -webkit-box-flex: 6;
+    -webkit-flex: 6;
+       -moz-box-flex: 6;
+        -ms-flex: 6;
+            flex: 6
+}
+
+.datetime_roll>div:last-child {
+  -webkit-box-flex: 6;
+  -webkit-flex: 6;
+     -moz-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6
+}
+
+.date_grid {
+    position: relative;
+    top: 4em;
+    width: 100%;
+    height: 2em;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    z-index: 0;
+    border-top: 1px solid #abaeb5;
+    border-bottom: 1px solid #abaeb5
+}
+
+.date_grid>div {
+    color: #000;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: .8em;
+    line-height: 2.5em
+}
+
+.date_roll>div:nth-child(3) .date_grid>div {
+    left: 42%
+}
+
+.datetime_roll>div .date_grid>div {
+    right: 0
+}
+
+.datetime_roll>div:first-child .date_grid>div {
+    left: auto;
+    right: 0%
+}
+
+.datetime_roll>div:last-child .date_grid>div {
+    left: 50%
+}
+
+.time_roll>div:nth-child(1) .date_grid>div {
+    right: 1em
+}
+
+.ym_roll>div:nth-child(1) .date_grid>div {
+    right: .1em
+}
+
+.ym_roll>div .date_grid>div, .time_roll>div .date_grid>div {
+    right: 5em
+}
+
+.date_roll>div:nth-child(1) .gear {
+    text-indent: 20%
+}
+
+.date_roll>div:nth-child(2) .gear {
+    text-indent: -20%
+}
+
+.date_roll>div:nth-child(3) .gear {
+    text-indent: -55%
+}
+
+.datetime_roll>div .gear {
+    width: 100%;
+    text-indent: -25%
+}
+
+.datetime_roll>div:first-child .gear {
+    text-indent: -10%
+}
+
+.datetime_roll>div:last-child .gear {
+    text-indent: -50%
+}
+
+.ym_roll>div .gear, .time_roll>div .gear {
+    width: 100%;
+    text-indent: -70%
+}
+
+.ym_roll>div:nth-child(1) .gear, .time_roll>div:nth-child(1) .gear {
+    width: 100%;
+    text-indent: 10%
+}
+
+.tooth {
+    height: 2em;
+    line-height: 2em;
+    text-align: center
+}
+
+.top {
+    height: 47px;
+    line-height: 47px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.date_btn_box {
+    position: absolute;
+    bottom: 0;
+    height: 55px;
+    line-height: 55px;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.date_btn_box div {
+    height: 35px;
+    width: 0.97rem;
+    border: 1px solid #ffabc8;
+    background-color: white;
+    line-height: 35px;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    color: #ffabc8;
+}
+
+.date_btn_box .show {
+    color: white;
+    background-color: #ffabc8
+}
+
+
+
+
+
+.gearYM,.gearDate,.gearDatetime,.gearTime{font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:10px;background-color:rgba(0,0,0,0.4);display:block;position:fixed;top:0;left:0;width:100%;height:100%;z-index:9900;overflow:hidden;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both}.date_ctrl{vertical-align:middle;background-color:white;color:#000;    top: 0;right: 0;margin: auto;height: 332px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;width:3rem;position:absolute;left:0;bottom:0;z-index:9901;overflow:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.slideInUp{-moz-animation:slideInUp .3s ease;-o-animation:slideInUp .3s ease;animation:slideInUp .3s ease;-webkit-animation:slideInUp .3s ease;}@-webkit-keyframes slideInUp{from{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}to{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}.ym_roll,.date_roll,.datetime_roll,.time_roll{display:-webkit-box;width:100%;height:auto;overflow:hidden;background-color:transparent;-webkit-mask:-webkit-gradient(linear,0% 50%,0% 100%,from(#debb47),to(rgba(36,142,36,0)));-webkit-mask:-webkit-linear-gradient(top,#debb47 50%,rgba(36,142,36,0));background: -webkit-gradient(linear, left bottom, left top, from(#ededed),color-stop(50%, #999), color-stop(50%, #ededed));background: -webkit-linear-gradient(bottom, #ededed,#999 50%, #ededed);background: -moz-linear-gradient(bottom, #ededed,#999 50%, #ededed);background: -o-linear-gradient(bottom, #ededed,#999 50%, #ededed);background: linear-gradient(to top, #ededed,#999 50%, #ededed); }.ym_roll>div,.date_roll>div,.datetime_roll>div,.time_roll>div{font-size:2.3em;height:230px;float:left;background-color:transparent;position:relative;overflow:hidden;-webkit-box-flex:4;-webkit-flex:4;-moz-box-flex:4;-ms-flex:4;flex:4}.ym_roll>div .gear,.date_roll>div .gear,.datetime_roll>div .gear,.time_roll>div .gear{width:100%;float:left;position:absolute;z-index:9902;margin-top:-6em}.date_roll_mask{-webkit-mask:-webkit-gradient(linear,0% 40%,0% 0%,from(#debb47),to(rgba(36,142,36,0)));-webkit-mask:-webkit-linear-gradient(bottom,#debb47 50%,rgba(36,142,36,0));background:-webkit-gradient(linear, left bottom, left top, from(#ededed),color-stop(50%, #999), color-stop(50%, #ededed));background:-webkit-linear-gradient(bottom, #ededed,#999 50%, #ededed);background:-moz-linear-gradient(bottom, #ededed,#999 50%, #ededed);background:-o-linear-gradient(bottom, #ededed,#999 50%, #ededed);background:linear-gradient(to top, #ededed,#999 50%, #ededed);}.date_roll>div:nth-child(2){-webkit-box-flex:2;-webkit-flex:2;-moz-box-flex:2;-ms-flex:2;flex:2}.date_roll>div:nth-child(1),.datetime_roll>div:nth-child(1){-webkit-box-flex:4;-webkit-flex:4;-moz-box-flex:4;-ms-flex:4;flex:4}.datetime_roll>div:first-child{-webkit-box-flex:6;-webkit-flex:6;-moz-box-flex:6;-ms-flex:6;flex:6}.datetime_roll>div:last-child{-webkit-box-flex:6;-webkit-flex:6;-moz-box-flex:6;-ms-flex:6;flex:6}.date_grid{position:relative;top:4em;width:100%;height:2em;margin:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;z-index:0;border-top:1px solid #abaeb5;border-bottom:1px solid #abaeb5}.date_grid>div{color:#000;position:absolute;right:0;top:0;font-size:.8em;line-height:2.5em}.date_roll>div:nth-child(3) .date_grid>div{left:42%}.datetime_roll>div .date_grid>div{right:0}.datetime_roll>div:first-child .date_grid>div{left:auto;right:0%}.datetime_roll>div:last-child .date_grid>div{left:50%}.time_roll>div:nth-child(1) .date_grid>div{right:1em}.ym_roll>div:nth-child(1) .date_grid>div{right:.1em}.ym_roll>div .date_grid>div,.time_roll>div .date_grid>div{right:5em}.date_roll>div:nth-child(1) .gear{text-indent:20%}.date_roll>div:nth-child(2) .gear{text-indent:-20%}.date_roll>div:nth-child(3) .gear{text-indent:-55%}.datetime_roll>div .gear{width:100%;text-indent:-25%}.datetime_roll>div:first-child .gear{text-indent:-10%}.datetime_roll>div:last-child .gear{text-indent:-50%}.ym_roll>div .gear,.time_roll>div .gear{width:100%;text-indent:-70%}.ym_roll>div:nth-child(1) .gear,.time_roll>div:nth-child(1) .gear{width:100%;text-indent:10%}.tooth{height:2em;line-height:2em;text-align:center}.top{  height: 47px;line-height: 47px;font-size: 18px;color: #333;  text-align: center;border-bottom: 1px solid #ddd;}.date_btn_box{  position: absolute;bottom: 0;height: 55px;line-height: 55px;border-top: 1px solid #ddd;width: 100%;font-size: 18px;text-align: center;display: -webkit-box;/* OLD - iOS 6-, Safari 3.1-6 */display: -moz-box;/* OLD - Firefox 19- (buggy but mostly works) */display: -ms-flexbox;/* TWEENER - IE 10 */display: -webkit-flex;/* NEW - Chrome */display: flex;-webkit-justify-content: space-around;-moz-justify-content: space-around;-ms-justify-content: space-around;-o-justify-content: space-around;-ms-flex-pack: distribute;justify-content: space-around;-webkit-align-items: center;-moz-align-items: center;-ms-align-items: center;-o-align-items: center;-webkit-box-align: center;-moz-box-align: center;-ms-flex-align: center;align-items: center;}.date_btn_box div{height: 35px;width: 0.97rem;border: 1px solid #ffabc8;background-color: white;line-height: 35px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;color: #ffabc8;}.date_btn_box .show{color:white;background-color: #ffabc8}

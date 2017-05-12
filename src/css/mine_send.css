@@ -1,0 +1,291 @@
+@import "common.css";
+@import "tools.css";
+#mine_send {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+
+.header-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 44px;
+    background-color: #FFabc8;
+    color: white;
+    padding: 0 13px;
+    width: 100%;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header-wrap-detail {
+    position: relative;
+    width: 100%
+}
+
+.header-detail .header-back-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%
+}
+
+.header-detail .header-text-detail {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.tab-wrap {
+    height: 44px;
+    line-height: 44px;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 100%;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.tab-wrap div {
+    width: 30%;
+    font-size: 18px;
+    color: #333;
+}
+
+.tab-wrap .show {
+    border-bottom: 2px solid #ffabc8;
+}
+
+.banner {
+    position: absolute;
+    top: 88px;
+    width: 100%;
+    bottom: 0;
+    overflow-y: scroll;
+}
+
+.banner .banner-list-right {
+    display: none;
+}
+
+.banner .left-item {
+    border-bottom: 1px solid #ddd;
+    padding: 18px 13px;
+    background-color: white;
+    margin-top: 7px;
+    position: relative;
+}
+
+.banner .right-item {
+    border-bottom: 1px solid #ddd;
+    padding: 18px 13px;
+    background-color: white;
+    margin-top: 7px;
+    position: relative;
+}
+
+.banner .left-item h4 {
+    font-size: 14px;
+    color: #333;
+}
+
+.banner .right-item h4 {
+    font-size: 14px;
+    color: #333;
+}
+
+.banner .left-item .left-item-content {
+    margin-left: 10%;
+    width: 90%;
+}
+
+.banner .left-item .left-item-content .img-list {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.banner .left-item .left-item-content .img-list .img-num {
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    width: 33%;
+}
+
+.banner .left-item .left-item-content .img-list li:nth-of-type(3n) {
+    border-right: 0;
+}
+
+.banner .left-item .left-item-content .img-list .img-one {
+    width: 100%;
+}
+
+.banner .left-item .left-item-content .img-list li:nth-of-type(3) {
+    margin-right: 0;
+}
+
+.banner .right-item .right-item-content {
+    margin-left: 10%;
+    width: 90%;
+}
+
+.banner .left-item .left-item-content p {
+    padding: 13px 0;
+    font-size: 14px;
+    text-indent: 28px;
+}
+
+.banner .right-item .right-item-content p {
+    padding: 13px 0;
+    font-size: 14px;
+    text-indent: 28px;
+}
+
+.banner .right-item .right-item-content div {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 1.71rem;
+    text-align: center;
+    position: relative;
+}
+
+.banner .right-item .right-item-content div video {
+    height: 100%;
+    width: 100%;
+}
+
+.banner .right-item .right-item-content div img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 46px;
+}
+
+.banner .left-item .left-item-content div img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner .left-item .left-item-content div img:nth-of-type(3) {
+    margin-right: 0;
+}
+
+.banner .left-item .left-item-content div .img-one {
+    width: 100%;
+    margin: 0;
+}
+
+.delete {
+    position: absolute;
+    top: 18px;
+    right: 13px;
+    font-size: 12px;
+    color: #999;
+}
+
+.detele-wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+display: none;
+}
+
+.detele-box {
+    width: 2.4rem;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+text-align: center;
+background-color: white;
+-webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+        border-radius: 10px;
+}
+
+.detele-box span {
+    height: .35rem;
+    width: 0.97rem;
+    border: 1px solid #ffabc8;
+    background-color: white;
+    line-height: .35rem;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #ffabc8;
+    font-size: 18px;
+    margin-top: .3rem;
+
+}
+.detele-box .bgcolor{
+  color: white;
+      background-color: #ffabc8;
+      border: 1px solid #ffabc8;
+}

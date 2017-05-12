@@ -1,0 +1,4 @@
+@import "./libs.scss";
+div{
+  @include compatible(border-radius,5px);
+}

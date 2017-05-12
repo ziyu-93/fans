@@ -1,0 +1,309 @@
+@import "common.css";
+@import "tools.css";
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 100%
+}
+
+#entertainment_page {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.header-logo {
+    height: 54px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #FFabc8;
+    padding: 0 13px;
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
+        justify-content: space-between;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+
+.header-logo .logo {
+    height: 50px;
+    margin-top: 2px;
+}
+
+.header-logo .header-logo-right {
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        -o-justify-content: center;
+        justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+
+.header-logo .header-logo-right img {
+    heigh: 27px;
+    width: 26px;
+    margin-bottom: 3px;
+}
+
+.header-logo .header-logo-right a {
+    color: #821242
+}
+
+
+.banner {
+    width: 100%;
+    position: absolute;
+    top: 104px;
+    left: 0;
+    bottom: 0;
+    overflow-y: scroll
+}
+.banner .banner-title-more a{
+  color:#999;
+}
+.banner .banner-loop {
+    border-bottom: 1px solid #ddd;
+    width: 100%
+}
+
+.banner .banner-loop img {
+    width: 100%;
+}
+
+.banner .banner-loop .swiper-pagination-bullet {
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    margin: 0 3px
+}
+
+.banner .banner-loop .swiper-pagination-bullet-active {
+    background-color: #FFabc8
+}
+
+.banner .banner-loop .swiper-pagination-bullets {
+    bottom: 8px
+}
+
+.banner-content {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-content .banner-title-wrap {
+    border-bottom: 1px solid #ddd;
+    padding: 0 13px
+}
+
+.banner-content .banner-title {
+    margin: 6px 0;
+    border-left: 3px solid #FFabc8;
+    height: 32px;
+}
+
+.banner-content .banner-title-text {
+    font-size: 16px;
+    color: #333;
+    padding: 4px 0 4px 13px;
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
+        justify-content: space-between;
+    height: 100%;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+
+.banner-content .banner-title-rigth {
+    font-size: 14px;
+    color: #999;
+    height: 100%;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.banner-content .banner-title-img {
+    height: 100%;
+    margin-left: 10px;
+}
+
+
+.banner-file .file-wrap {
+    padding: 13px 0;
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    text-align: center;
+    -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
+        justify-content: space-between;
+    margin: 0px 13px;
+    overflow-x: scroll;
+}
+
+.banner-file .file-item {
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    width: 23%;
+}
+.banner-file .file-img{
+  width: 100%;
+}
+.banner-file .file-name {
+    font-size: 14px;
+    color: #333;
+    margin: 7px 0
+}
+
+.banner-file .file-star {
+    color: #ccc;
+    font-size: 12px;
+}
+.banner-file .file-box {
+    border-bottom: 1px solid #dddddd;
+}
+
+.banner-file-tv .file-wrap {
+    padding: 13px 0;
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    text-align: center;
+    -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
+        justify-content: space-between;
+    margin: 0px 13px;
+    overflow-x: scroll;
+}
+
+.banner-file-tv .file-item {
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    width: 23%;
+}
+.banner-file-tv .file-img{
+  width: 100%;
+}
+.banner-file-tv .file-name {
+    font-size: 14px;
+    color: #333;
+    margin: 7px 0
+}
+
+.banner-file-tv .file-star {
+    color: #ccc;
+    font-size: 12px;
+}
+.banner-file-tv .file-box {
+    border-bottom: 1px solid #dddddd;
+}
+.banner-variety .variety-item{
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  padding: 13px 13px;
+  border-bottom: 1px solid #ddd;
+}
+.banner-variety .variety-item img{
+  width: 130px;
+  margin-right: 15px;
+}
+.banner-variety .variety-content{
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: -webkit-flex;     /* NEW - Chrome */
+      display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  -webkit-justify-content: space-around;
+      -moz-justify-content: space-around;
+      -ms-justify-content: space-around;
+      -o-justify-content: space-around;
+      justify-content: space-around;
+}
+.banner-variety .variety-content .variety-name{
+  font-size: 18px;
+  color: #333;
+}
+.banner-variety .variety-content .variety-tv{
+  font-size: 14px;
+  color: #666;
+}

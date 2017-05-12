@@ -1,0 +1,221 @@
+@import "common.css";
+@import "tools.css";
+#new_detail_reply {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.header-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 44px;
+    background-color: #FFabc8;
+    color: white;
+    padding: 0 13px;
+    width: 100%;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+
+.header-wrap-detail {
+    position: relative;
+    width: 100%
+}
+
+.header-detail .header-back-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%
+}
+
+.header-detail .header-text-detail {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.banner {
+    position: absolute;
+    top: 44px;
+    width: 100%;
+    overflow-y: scroll;
+    bottom: 0;
+}
+
+.banner-top {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    padding: 15px 13px 0;
+    border-bottom: 1px solid #ddd;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -o-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+.banner .banner-top .logo-wrap {
+    width: 60px;
+    height: 60px;
+    margin-right: 13px;
+}
+
+.banner .banner-top .logo-wrap .item-logo {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.banner-top .top-rigth .rigth-title {
+    padding-top: 12px;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 29px;
+}
+
+.list-item .logo-wrap {
+    width: 60px;
+    height: 60px;
+    margin-right: 13px;
+}
+
+.list-item .logo-wrap .item-logo {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.banner-top .top-rigth .right-name {
+    margin-right: 22px;
+}
+
+.banner-top .top-rigth .right-grade {
+    color: white;
+    background-color: #ffac64;
+    height: 100%;
+    padding: 0 6px;
+    border-radius: 5px;
+}
+
+.banner-top .top-rigth .rigth-text {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 25px;
+    text-indent: 24px;
+}
+
+.banner-top .top-rigth .rigth-bottom {
+    margin-bottom: 9px;
+    font-size: 12px;
+}
+
+.banner-title .banner-title-wrap {
+    border-bottom: 1px solid #ddd;
+    padding: 0 13px
+}
+
+.banner-title .banner-title {
+    margin: 4px 0;
+    border-left: 3px solid #FFabc8;
+    height: 36px;
+}
+
+.banner-title .banner-title-text {
+    font-size: 16px;
+    color: #333;
+    padding: 4px 0 4px 13px;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    height: 100%;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+
+.reply-wrap {
+    padding: 0 13px;
+}
+
+.reply-wrap .reply-list .list-item {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 30px;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -o-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+.reply-wrap .reply-list .list-item:nth-of-type(1) {
+    margin-top: 15px;
+}
+
+.reply-wrap .reply-list .item-top {
+    margin-top: 9px;
+    margin-bottom: 8px;
+}
+
+.reply-wrap .reply-list .item-name, .callback-name {
+    color: #4a84f8;
+}
+
+.reply-wrap .reply-list .callback-black {
+    margin: 0 7px;
+}
+
+.banner .time {
+    color: #ccc;
+    margin-right: 19px;
+}
+
+.banner .callback {
+    color: #4a84f8;
+}

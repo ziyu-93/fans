@@ -1,0 +1,132 @@
+@import "common.css";
+#new_detail_comment {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+textarea::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #bbb
+}
+
+textarea:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #bbb;
+}
+
+textarea::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #bbb;
+}
+
+textarea:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #bbb;
+}
+.header-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 44px;
+    background-color: #FFabc8;
+    color: white;
+    padding: 0 13px;
+    width: 100%;
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+
+.header-wrap-detail {
+    position: relative;
+    width: 100%
+}
+
+.header-detail .header-back-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%
+}
+
+.header-detail .header-text-detail {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+#new_detail_comment .banner {
+    position: absolute;
+    top: 44px;
+    width: 100%;
+    overflow-y: scroll;
+    bottom: 0;
+}
+#new_detail_comment .banner-content{
+  background-color: white;
+  margin: 4px 13px 0;
+  border-radius: 10px;
+  height: 334px;
+}
+#new_detail_comment .content-top{
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  height: 40px;
+}
+#new_detail_comment .content-top img{
+  margin-left: .299rem;
+  width: 31px;
+  margin-top: 9px;
+}
+#new_detail_comment .content-top .right-img{
+  margin-left: .342rem;
+  width: 22px;
+}
+#new_detail_comment .content-text{
+    margin: 8px 6px 0;
+    height: 196px;
+    position: relative;
+}
+#new_detail_comment .content-text .text-wrap{
+  width: 100%;
+  background-color: #f5f5f5;
+
+  height: 100%;
+  padding: 10px 0 25px;
+}
+#new_detail_comment .content-text .text-wrap textarea{
+  width: 100%;
+height: 100%;
+text-indent: 14px;
+padding: 0 10px;
+  color:#333;
+  font-size: 14px;
+}
+#new_detail_comment .content-text p{
+  color:#bbb;
+  font-size: 14px;
+  position: absolute;
+  bottom: 5px;
+  right: 10px
+}
+#new_detail_comment .content-reply{
+  height: 40px;
+  width: 210px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #ffb0ca;
+  line-height: 40px;
+  display: block;
+  margin: 27px auto;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 4px;
+}

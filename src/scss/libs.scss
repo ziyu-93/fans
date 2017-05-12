@@ -1,0 +1,7 @@
+$prefixes: -webkit- ,-moz-,-ms-,-o-,'';
+
+@mixin compatible($name,$argument){
+   @each $pre in $prefixes{
+    #{$pre}#{$name}:$argument;
+   }
+ }

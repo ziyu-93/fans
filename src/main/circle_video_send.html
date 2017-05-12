@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>上传</title>
+    <link rel="stylesheet" href="./../css/circle_video_send.css">
+</head>
+
+<body>
+    <div id="circle_wall_send">
+        <div class="header-detail">
+            <div class="header-wrap-detail">
+                <img class="header-back-detail" src="./../img/back.png">
+                <p class="header-text-detail">发布视频</p>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="banner-content">
+                <div class="content-top">
+                    <img class="left-img" src="./../img/new_detail_comment_text_1.png">
+                    <img class="right-img" src="./../img/new_detail_comment_icon.png">
+                </div>
+                <div class="content-text">
+                    <div class="text-wrap">
+                        <textarea maxlength="300" id="text" placeholder="点这里写评论" autofocus="autofocus" rows="10"></textarea>
+                    </div>
+                    <p><span class="font-num">0</span><span>/300</span></p>
+                </div>
+                <div class="banner-title">
+                    <div class="banner-title-wrap">
+                        <div class="banner-title">
+                            <div class="banner-title-text">
+                                <span>插入视频</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-bottom">
+                    <img class="add-img" src="./../img/circle_wall_send.png">
+                    <!-- <video src="videofile.ogg" autoplay poster="./../img/star_name4.png">
+
+                    </video> -->
+                </div>
+                <div class="send-warp"><span class="send">上传</span></div>
+            </div>
+        </div>
+        <div class="uploader-wrap">
+            <div class="uploader-list">
+                <form>
+                    <div class="file-wrap">
+                        上传视频
+                        <input id="upload_video" type="file" accept="video/*;capture=camcorder">
+                    </div>
+                </form>
+                <span class="close-send">取消</span>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./../lib/jquery-1.12.3.min.js"></script>
+<scrip src="./../lib/fastclick.js"></scrip>
+<script src="./../js/tools.js"></script>
+<script src="./../js/circle_video_send.js"></script>
+
+</html>

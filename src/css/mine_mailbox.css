@@ -1,0 +1,182 @@
+@import "common.css";
+#mine_mailbox {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+
+.header-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 44px;
+    background-color: #FFabc8;
+    color: white;
+    padding: 0 13px;
+    width: 100%;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+
+.header-wrap-detail {
+    position: relative;
+    width: 100%
+}
+
+.header-detail .header-back-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%
+}
+
+.header-detail .header-text-detail {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.banner {
+    position: absolute;
+    top: 44px;
+    width: 100%;
+    padding: 7px 0;
+    bottom: 0;
+}
+.banner-top {
+    padding: 0 0.4rem;
+    background: white;
+        overflow: hidden;
+}
+
+.banner-top .main-number {
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    padding: .2rem 0 .05rem;
+}
+
+.banner-top .main-number label {
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    color: #ccc;
+    position: relative;
+}
+
+.banner-top .main-number img {
+    height: 22px;
+    margin-right: .15rem;
+        width: 26px;
+}
+
+.banner-top .code-wrap {
+    position: relative;
+}
+
+.banner-top .code-wrap .get-code {
+    padding: 7px 12px;
+    background: #FFabc8;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    color: white;
+    text-align: center;
+    width: 100px;
+}
+
+.banner-top .main-sign-up {
+    padding: 0.205rem 0;
+}
+
+.banner-top .main-sign-up a {
+    height: 33px;
+    width: 210px;
+    border-radius: 5px;
+    color: white;
+    background-color: #ffb0ca;
+    line-height: 33px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+/*.banner-bottom .bottom-sign-in {
+    width: 100%;
+    margin-top: .385rem;
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.banner-bottom .bottom-sign-in .sign-in {
+    color: #4383F9;
+}*/
+
+.banner-top .main-number .true {
+    position: absolute;
+    right: -30px;
+    margin-right: 0;
+    display: none;
+}
+.banner-top .description{
+  font-size: 12px;
+  color:#4593F3;
+  text-align: center;
+  margin: 0.128rem 0 .256rem;
+}
+.success-wrap{
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    bottom: 0;
+    display: none;
+    z-index: 100;
+}
+.success-wrap .success{
+  width: 2.52rem;
+height: 170px;
+background-color: white;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+margin: auto;
+text-align: center;
+font-size: 21px;
+color: #333;
+border-radius: 10px;
+z-index: 999;
+}
+.success-wrap .success img{
+  width: 75px;
+  height: 75px;
+  margin: 19px 0 33px;
+}
+.success-wrap .close{
+  width: 100%;
+  height: 100%;
+}
